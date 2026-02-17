@@ -3,6 +3,7 @@ package com.driver;
 public class F1 extends Car {
 
     public F1(String name, boolean isManual) {
+        // Arbitrary values
         super(name, 4, 2, 6, isManual, "F1", 1);
     }
 
@@ -13,7 +14,7 @@ public class F1 extends Car {
         if(newSpeed <= 0){
             stop();
             changeGear(1);
-        }
+        } 
         else {
 
             if(newSpeed <= 50){
